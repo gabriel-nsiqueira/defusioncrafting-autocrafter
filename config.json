@@ -1,0 +1,51 @@
+{
+    "craftingInput": "input inventory",
+    "craftingOutput": "output inventory",
+    "recipes": [
+        {
+            "sideInputs": [
+                { "name": "draconicevolution:wyvern_core",     "count": 1 },
+                { "name": "draconicevolution:draconium_core",  "count": 2 },
+                { "name": "draconicevolution:draconium_block", "count": 1 },
+                { "name": "minecraft:diamond",                 "count": 4 }
+            ],
+            "mainInput": { "name": "draconicevolution:basic_crafting_injector", "count": 1 },
+            "recipeName": "Wyvern Crafting Injector"
+        },
+        {
+            "sideInputs": [
+                { "name": "draconicevolution:wyvern_core",              "count": 2 },
+                { "name": "draconicevolution:awakened_draconium_block", "count": 1 },
+                { "name": "minecraft:diamond",                          "count": 4 }
+            ],
+            "mainInput": { "name": "draconicevolution:wyvern_crafting_injector", "count": 1 },
+            "recipeName": "Draconic Crafting Injector"
+        },
+        {
+            "sideInputs": [
+                { "name": "draconicevolution:awakened_core",            "count": 2 },
+                { "name": "draconicevolution:awakened_draconium_ingot", "count": 4 },
+                { "name": "draconicevolution:large_chaos_frag",         "count": 4 }
+            ],
+            "mainInput": { "name": "draconicevolution:large_chaos_frag", "count": 1 },
+            "recipeName": "Chaotic Core"
+        },
+        {
+            "sideInputs": [
+                { "name": "draconicevolution:wyvern_core",              "count": 4 },
+                { "name": "draconicevolution:awakened_draconium_ingot", "count": 4 }
+            ],
+            "mainInput": { "name": "minecraft:nether_star", "count": 1 },
+            "recipeName": "Draconic Core"
+        },
+        {
+            "sideInputs": [
+                { "name": "minecraft:dragon_egg",               "count": 1 },
+                { "name": "minecraft:diamond",                  "count": 4 },
+                { "name": "draconicevolution:large_chaos_frag", "count": 4 }
+            ],
+            "mainInput": { "name": "draconicevolution:awakened_crafting_injector", "count": 1 },
+            "recipeName": "Chaotic Crafting Injector"
+        }
+    ]
+}
