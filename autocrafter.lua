@@ -21,18 +21,12 @@ else
 end
 
 for i, name in pairs(modem.getNamesRemote()) do
-    remote_types = modem.getTypeRemote(name)
-    for _, remote_type in pairs(remote_types) do
-        if #inputChestIds == 0 and remote_type == "draconicevolution:crafting_injector" then
-            table.insert(inputChestIds, name)
-            break
-        elseif (not craftingCore) and remote_type == "draconicevolution:crafting_core" then
-            craftingCore = name
-            break
-        elseif (not activator) and remote_type == "redstoneIntegrator" then
-            activator = name
-            break
-        end
+    if #inputChestIds == 0 and modem.hasTypeRemote(name, "draconicevolution:crafting_injector") then
+        table.insert(inputChestIds, name)
+    elseif (not craftingCore) and modem.hasTypeRemote(name, "draconicevolution:crafting_core") then
+        craftingCore = name
+    elseif (not activator) and modem.hasTypeRemote(name, "redstoneIntegrator") then
+        activator = name
     end
 end
 
