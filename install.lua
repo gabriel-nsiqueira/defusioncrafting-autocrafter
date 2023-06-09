@@ -3,7 +3,7 @@ function download_file(filename, name)
     request = http.get("https://raw.githubusercontent.com/gabriel-nsiqueira/defusioncrafting-autocrafter/master/" ..
         filename)
     stream = fs.open(name, "w")
-    stream.write(name)
+    stream.write(request.readAll())
     stream.close()
 end
 
