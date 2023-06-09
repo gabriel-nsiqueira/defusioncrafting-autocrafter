@@ -21,7 +21,7 @@ else
 end
 
 for i, name in pairs(modem.getNamesRemote()) do
-    if #inputChestIds == 0 and modem.hasTypeRemote(name, "draconicevolution:crafting_injector") then
+    if modem.hasTypeRemote(name, "draconicevolution:crafting_injector") then
         table.insert(inputChestIds, name)
     elseif (not craftingCore) and modem.hasTypeRemote(name, "draconicevolution:crafting_core") then
         craftingCore = name
